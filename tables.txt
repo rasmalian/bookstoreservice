@@ -1,0 +1,44 @@
+-- public.collections definition
+
+-- Drop table
+
+-- DROP TABLE public.collections;
+
+CREATE TABLE public.collections (
+	id serial4 NOT NULL,
+	"name" text NULL,
+	img_url text NULL,
+	price numeric NULL,
+	"desc" varchar NULL,
+	CONSTRAINT collections_pkey PRIMARY KEY (id)
+);
+
+
+-- public.items definition
+
+-- Drop table
+
+-- DROP TABLE public.items;
+
+CREATE TABLE public.items (
+	id serial4 NOT NULL,
+	"name" text NULL,
+	img_url text NULL,
+	price numeric NULL,
+	"desc" varchar NULL,
+	CONSTRAINT items_pkey PRIMARY KEY (id)
+);
+
+
+-- public."transaction" definition
+
+-- Drop table
+
+-- DROP TABLE public."transaction";
+
+CREATE TABLE public."transaction" (
+	id serial4 NOT NULL,
+	total numeric NULL,
+	uniquehash varchar NULL
+);
+
